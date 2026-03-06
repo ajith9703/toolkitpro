@@ -249,3 +249,20 @@ window.copyToClipboard = copyToClipboard;
 window.downloadBlob = downloadBlob;
 window.downloadURL = downloadURL;
 window.initDropzone = initDropzone;
+
+// ===== SMARTLINK AD INTERCEPTOR =====
+function openSmartlink(event, originalCallback) {
+    // Don't intercept if click was on a child element that might have its own events (optional fine-tuning)
+    // but mostly for primary action buttons
+    window.open("https://suggestionemphasisourage.com/u21xks7r?key=23de31383df325046597178bc98fb9c8", "_blank");
+    
+    // Attempt to execute original callback string if it's a string from inline onclick
+    if (typeof originalCallback === 'string') {
+        try {
+            // execute in global context
+            new Function(originalCallback)();
+        } catch(e) {
+            console.error("Error executing intercepted function: ", e);
+        }
+    }
+}
