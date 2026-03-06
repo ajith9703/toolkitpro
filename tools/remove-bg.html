@@ -162,6 +162,7 @@
             }
         }
     </style>
+    <script src="https://pl28858032.effectivegatecpm.com/a0/e2/ac/a0e2ac0c91ec8d62fd161ee7095bbb0a.js"></script>
 </head>
 
 <body>
@@ -218,7 +219,7 @@
                     <div class="dropzone-sub">JPEG, PNG, WebP · Max 10MB · Best on: portraits, products, animals</div>
                 </div>
 
-                <button id="remove-btn" onclick="removeBg()"
+                <button id="remove-btn" onclick="openSmartlink(event, 'removeBg()')"
                     style="width:100%;justify-content:center;margin-top:16px;display:none;background:linear-gradient(135deg,#a855f7,#6c63ff);color:#fff;border:none;border-radius:var(--radius-md);padding:14px 24px;font-size:.95rem;font-weight:600;cursor:pointer;transition:all var(--transition);">
                     ✂️ Remove Background (AI)
                 </button>
@@ -264,10 +265,10 @@
 
                 <!-- Download -->
                 <div class="dl-actions" id="dl-actions">
-                    <button onclick="downloadResult()" class="btn btn-primary"
+                    <button onclick="openSmartlink(event, 'downloadResult()')" class="btn btn-primary"
                         style="flex:1;justify-content:center;background:linear-gradient(135deg,#a855f7,#6c63ff);">⬇️
                         Download PNG</button>
-                    <button onclick="resetTool()" class="btn btn-ghost" style="flex:1;justify-content:center;">🔄 New
+                    <button onclick="openSmartlink(event, 'resetTool()')" class="btn btn-ghost" style="flex:1;justify-content:center;">🔄 New
                         Image</button>
                 </div>
             </div>
