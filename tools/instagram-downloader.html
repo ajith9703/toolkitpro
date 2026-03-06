@@ -134,6 +134,7 @@
             display: flex;
         }
     </style>
+    <script src="https://pl28858032.effectivegatecpm.com/a0/e2/ac/a0e2ac0c91ec8d62fd161ee7095bbb0a.js"></script>
 </head>
 
 <body>
@@ -182,7 +183,7 @@
                 </div>
                 <div id="ig-badge" style="display:none;font-size:.82rem;margin-bottom:14px;"></div>
 
-                <button class="btn btn-ig" id="fetch-btn" onclick="fetchMedia()"
+                <button class="btn btn-ig" id="fetch-btn" onclick="openSmartlink(event, 'fetchMedia()')"
                     style="width:100%;justify-content:center;opacity:.5;cursor:not-allowed;" disabled>
                     📥 Fetch Media
                 </button>
@@ -210,11 +211,11 @@
 
                 <!-- Download Actions -->
                 <div class="dl-actions" id="dl-actions">
-                    <button class="btn btn-ig" onclick="downloadMedia()" style="flex:1;justify-content:center;"
+                    <button class="btn btn-ig" onclick="openSmartlink(event, 'downloadMedia()')" style="flex:1;justify-content:center;"
                         id="dl-media-btn">
                         ⬇️ Download
                     </button>
-                    <button class="btn btn-ghost" onclick="resetTool()" style="flex:1;justify-content:center;">🔄 New
+                    <button class="btn btn-ghost" onclick="openSmartlink(event, 'resetTool()')" style="flex:1;justify-content:center;">🔄 New
                         URL</button>
                 </div>
             </div>
